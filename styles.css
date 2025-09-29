@@ -1,0 +1,96 @@
+* {
+    background-color: black;
+    color: white;
+    font-family: monospace;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
+    margin: 0; /* Removes default margin */
+    padding: 0;
+    height: 100vh; /* Makes the container full viewport height */
+}
+
+.title h1 {
+    font-size: 40px;
+    letter-spacing: 1rem;
+}
+
+/* Track Card */
+.track-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 1rem auto;
+}
+
+.track-links img {
+  width: clamp(40px, 10vw, 60px);
+  border-radius: 7px;
+  border: solid beige;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.track-links img:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 6px #fff);
+}
+
+
+.button {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: 2px solid white;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.button:hover {
+    background-color: #333333;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 6px #fff);
+}
+
+@media (max-width: 768px) {
+  .track-links img {
+    width: clamp(13%, 10vw, 13%);
+    border-radius: 7px;
+    border: solid beige;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.25s ease, filter 0.25s ease;
+  }
+
+  .track-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+.track-links img {
+  width: clamp(13%, 10vw, 13%);
+  border-radius: 7px;
+  border: solid beige;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.25s ease, filter 0.25s ease;
+    }
+
+.track-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
