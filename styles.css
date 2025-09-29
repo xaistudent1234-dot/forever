@@ -30,6 +30,14 @@
   margin: 1rem auto;
 }
 
+.track-links {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .track-links img {
   width: clamp(40px, 10vw, 60px);
   border-radius: 7px;
@@ -65,7 +73,6 @@
 
 @media (max-width: 768px) {
   .track-links img {
-    width: clamp(13%, 10vw, 13%);
     border-radius: 7px;
     border: solid beige;
     padding: 10px;
@@ -73,10 +80,6 @@
     transition: transform 0.25s ease, filter 0.25s ease;
   }
 
-  .track-card {
-    flex-direction: column;
-    text-align: center;
-  }
 }
 
 @media (max-width: 480px) {
@@ -88,9 +91,4 @@
   cursor: pointer;
   transition: transform 0.25s ease, filter 0.25s ease;
     }
-
-.track-card {
-    flex-direction: column;
-    text-align: center;
-  }
 }
